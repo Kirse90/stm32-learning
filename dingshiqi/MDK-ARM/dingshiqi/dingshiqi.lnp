@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dingshiqi\startup_stm32f103xb.o"
+"dingshiqi\main.o"
+"dingshiqi\gpio.o"
+"dingshiqi\tim.o"
+"dingshiqi\stm32f1xx_it.o"
+"dingshiqi\stm32f1xx_hal_msp.o"
+"dingshiqi\stm32f1xx_hal_gpio_ex.o"
+"dingshiqi\stm32f1xx_hal_tim.o"
+"dingshiqi\stm32f1xx_hal_tim_ex.o"
+"dingshiqi\stm32f1xx_hal.o"
+"dingshiqi\stm32f1xx_hal_rcc.o"
+"dingshiqi\stm32f1xx_hal_rcc_ex.o"
+"dingshiqi\stm32f1xx_hal_gpio.o"
+"dingshiqi\stm32f1xx_hal_dma.o"
+"dingshiqi\stm32f1xx_hal_cortex.o"
+"dingshiqi\stm32f1xx_hal_pwr.o"
+"dingshiqi\stm32f1xx_hal_flash.o"
+"dingshiqi\stm32f1xx_hal_flash_ex.o"
+"dingshiqi\stm32f1xx_hal_exti.o"
+"dingshiqi\system_stm32f1xx.o"
+--strict --scatter "dingshiqi\dingshiqi.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dingshiqi.map" -o dingshiqi\dingshiqi.axf

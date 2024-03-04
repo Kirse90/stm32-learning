@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"cktx\startup_stm32f103xb.o"
+"cktx\printf.o"
+"cktx\main.o"
+"cktx\gpio.o"
+"cktx\usart.o"
+"cktx\stm32f1xx_it.o"
+"cktx\stm32f1xx_hal_msp.o"
+"cktx\stm32f1xx_hal_gpio_ex.o"
+"cktx\stm32f1xx_hal_tim.o"
+"cktx\stm32f1xx_hal_tim_ex.o"
+"cktx\stm32f1xx_hal_uart.o"
+"cktx\stm32f1xx_hal.o"
+"cktx\stm32f1xx_hal_rcc.o"
+"cktx\stm32f1xx_hal_rcc_ex.o"
+"cktx\stm32f1xx_hal_gpio.o"
+"cktx\stm32f1xx_hal_dma.o"
+"cktx\stm32f1xx_hal_cortex.o"
+"cktx\stm32f1xx_hal_pwr.o"
+"cktx\stm32f1xx_hal_flash.o"
+"cktx\stm32f1xx_hal_flash_ex.o"
+"cktx\stm32f1xx_hal_exti.o"
+"cktx\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "cktx\cktx.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "cktx.map" -o cktx\cktx.axf
